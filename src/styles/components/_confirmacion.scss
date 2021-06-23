@@ -1,0 +1,213 @@
+.confirmacion__container{
+    background-color: rgba(255, 255, 255, 0.452);
+    
+    backdrop-filter: blur(1px);
+    border: solid 1px rgba(248, 248, 248, 0.178);
+    border-radius: 10px;
+
+    width: 30%;
+    margin: 0 auto;
+    
+
+    box-shadow: 0px 10px 20px 5px rgba(110, 110, 110, 0.3);
+    
+    // tapa tocas la capas hijas 
+    overflow: hidden;
+    transition:all .9s ease;
+
+    @media screen and (max-width: 1300px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width: 750px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 60%;
+    }
+}
+
+.confirmacion__bienvenido{
+    color: #333333;
+
+    span {
+        color: rgb(31, 31, 31);
+    }
+}
+.confirmacion__plan{
+    margin: 10px 0;
+}
+.confirmacion__precio{
+    
+    color: #333333;
+}
+.confirmacion__descripcion {
+    color: #6D757D;
+    margin: 20px 0;
+}
+.confirmacion__ref {
+    text-decoration-line: underline; 
+    color:#252525c5;
+    cursor: pointer;
+}
+.confirmacion__img {
+    
+    height: 100%;
+    width: 100%;
+}
+
+/*/*/
+.success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+    
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 4px solid rgba(17, 17, 17, 0.733);
+        
+        &::before {
+            top: 3px;
+            left: -2px;
+            width: 30px;
+            transform-origin: 100% 50%;
+            border-radius: 100px 0 0 100px;
+        }
+        
+        &::after {
+            top: 0;
+            left: 30px;
+            width: 60px;
+            transform-origin: 0 50%;
+            border-radius: 0 100px 100px 0;
+            animation: rotate-circle 4.25s ease-in;
+        }
+        
+        &::before, &::after {
+            content: '';
+            height: 100px;
+            position: absolute;
+            // background-color: #CAC9CA;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-line {
+            height: 5px;
+            background-color: rgb(46, 46, 46);;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 10;
+            
+            &.line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+            
+            &.line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 0.75s;
+            }
+        }
+        
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 4px solid rgba(17, 17, 17, 0.904);
+        }
+        
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 26px;
+            z-index: 1;
+            height: 85px;
+            position: absolute;
+            transform: rotate(-45deg);
+            // background-color: rgba(255, 255, 255, 0.452);
+        }
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+    5% {
+        transform: rotate(-45deg);
+    }
+    12% {
+        transform: rotate(-405deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}

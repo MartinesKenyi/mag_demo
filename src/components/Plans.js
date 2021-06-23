@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Plans = () => {
+export const Plans = ({history}) => {
 
     const handleSuscription = () => {
-        console.log("siguiente")
+        history.push("/datos");
     }
     
     return (
@@ -36,7 +36,7 @@ export const Plans = () => {
 
                     <button
                         onClick={handleSuscription}
-                        className="plans_button"
+                        className="button"
                     >
                         Suscribirme
                 </button>
@@ -72,7 +72,7 @@ export const Plans = () => {
                     <button
                         type="button"
                         onClick={handleSuscription}
-                        className="plans_button"
+                        className="button"
                     >
                         Suscribirme
                 </button>
