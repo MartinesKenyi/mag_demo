@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Redirect } from 'react-router'
 import { FormDatos } from '../components/FormDatos';
 import { SelectPlans } from '../components/SelectPlans';
+import { SuscriptionContext } from '../suscription/SuscriptionContext';
 
 export const Datos = ({ history }) => {
 
     const dimensiones = window.matchMedia("(max-width: 650px)").matches;
     const [modal, setModal] = useState(true);
+    const { suscriptionState } = useContext(SuscriptionContext);
+
+    const { ok } = suscriptionState
+
+    if(!ok) {
+        return <Redirect to="/suscripcion" />
+    }
 
     const handleModal = () => {
         setModal(!modal)
