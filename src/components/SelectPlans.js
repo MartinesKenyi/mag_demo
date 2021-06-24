@@ -5,14 +5,14 @@ import { ListBeneficios } from './ListBeneficios';
 import { suscriptions } from '../data/sucription';
 import { types } from '../types/types';
 
-export const SelectPlans = ({dimensiones, handleClose}) => {
+export const SelectPlans = ({ dimensiones, handleClose }) => {
 
     const { suscriptionState, dispatch } = useContext(SuscriptionContext);
     const { tipo, precio, popular, descricion, beneficios } = suscriptionState.sucriptionActive;
 
     const handleCambiarPlan = () => {
         const suscription = suscriptions.find(s => s.popular !== popular)
-        
+
         dispatch({
             type: types.setSuscription,
             payload: { ...suscription }
@@ -21,21 +21,21 @@ export const SelectPlans = ({dimensiones, handleClose}) => {
 
     return (
         <div className="datos__select-plans"
-            style={ (dimensiones) ?  {background: 'white', borderRadius: "8px", margin: '50px', padding: '30px'} : {}}
+            style={(dimensiones) ? { background: 'white', borderRadius: "8px", margin: '50px', padding: '30px' } : {}}
         >
             <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }} >
-                    <div 
-                        className="plans__popular" 
-                        hidden={!dimensiones}
-                        onClick={handleClose}
-                    > X </div>
-                </div>
+                <div
+                    className="plans__popular"
+                    hidden={!dimensiones}
+                    onClick={handleClose}
+                > X </div>
+            </div>
 
-            <h3 style={{ fontSize: '12px', color: '#252525c5' }}>
+            <h3 className="datos__plan">
                 plan
                 <span style={{ fontSize: '20px', color: '#000' }}> {tipo} </span>
             </h3>
-            <h1 style={{ display: 'flex', fontSize: "50px", margin: "10px" }}>
+            <h1 className="datos__price">
                 <span style={{ fontSize: "12px", margin: "10px" }}>
                     S/
                     </span>
@@ -43,9 +43,9 @@ export const SelectPlans = ({dimensiones, handleClose}) => {
                 <span style={{ fontSize: "10px", margin: '35px 0 0 5px' }}> / al mes</span>
             </h1>
 
-            <p style={{ fontSize: "11px", margin: "0 5px" }}> {descricion} </p>
+            <p className="datos__description"> {descricion} </p>
 
-            <hr style={{ border: '1pt solid #6b6b6b62', margin: "15px 0" }} />
+            <hr className="hr" />
 
             <ul className="ul">
                 {
@@ -65,7 +65,7 @@ export const SelectPlans = ({dimensiones, handleClose}) => {
                     onClick={handleCambiarPlan}
                     className="datos__cambiar-plan"
                 >
-                    Cambiar a plan {  (popular) ? " premiun >" : " estándar >" }
+                    Cambiar a plan {(popular) ? " premiun >" : " estándar >"}
                 </div>
             </div>
         </div>

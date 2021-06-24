@@ -13,7 +13,7 @@
     
     // tapa tocas la capas hijas 
     overflow: hidden;
-    transition:all .9s ease;
+    transition:all .3s ease;
 
     @media screen and (max-width: 1300px) {
         width: 600px;
@@ -94,7 +94,6 @@
             content: '';
             height: 100px;
             position: absolute;
-            // background-color: #CAC9CA;
             transform: rotate(-45deg);
         }
         
@@ -143,7 +142,6 @@
             height: 85px;
             position: absolute;
             transform: rotate(-45deg);
-            // background-color: rgba(255, 255, 255, 0.452);
         }
     }
 }

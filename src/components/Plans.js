@@ -30,16 +30,16 @@ export const Plans = ({ history, tipo, precio, descricion, popular, beneficios }
                     <div className="plans__popular" hidden={!popular}> POPULAR </div>
                 </div>
                 <h3 className="plans__plan">{tipo}</h3>
-                <h1 style={{ display: 'flex', fontSize: "50px", margin: "10px" }}>
+                <h1 className="plans__price">
                     <span style={{ fontSize: "12px", margin: "10px" }}>
                         S/
                     </span>
                     {precio}
                     <span style={{ fontSize: "10px", margin: '35px 0 0 5px' }}> / al mes</span>
                 </h1>
-                <p style={{ fontSize: "11px", margin: "0 5px" }}> {descricion} </p>
+                <p className="plans__description"> {descricion} </p>
 
-                <hr style={{ border: '1pt solid #6b6b6b62', margin: "15px 0" }} />
+                <hr className="hr" />
 
                 <ul className="ul"
                     style={{ marginBottom: "60px" }}

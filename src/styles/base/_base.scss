@@ -27,10 +27,6 @@ main {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 .filter{
@@ -61,7 +57,10 @@ main {
         box-shadow: 0 5px 10px 2px rgba(61, 61, 61, 0.315);
     }
 }
-
+.hr {
+    border: 1pt solid #6b6b6b62;
+    margin: 15px 0;
+}
 //*//
 .mt-1 {
     margin-top: 5px;

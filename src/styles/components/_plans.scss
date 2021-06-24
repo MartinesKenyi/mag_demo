@@ -13,7 +13,7 @@
     
     // tapa tocas la capas hijas 
     overflow: hidden;
-    transition:all .9s ease;
+    transition:all .3s ease;
 
     &:hover {
         transform:scale(1.1);
@@ -35,7 +35,6 @@
 
 
 }
-
 .plans__popular {
     font-size: 10px;
     color: #FCFCFC;
@@ -43,12 +42,10 @@
     border-radius: 5px;
     background: #575757;
 }
-
 .plans__plan {
     color: #FCFCFC;
     font-weight: bold;
 }
-
 .plans__li{
     font-size: 13px;
     color: #313131;
@@ -60,4 +57,13 @@
     bottom: 0;
     left: 0%;
     text-align: center;
+}
+.plans__price{
+    display: flex; 
+    font-size: 50px; 
+    margin: 10px
+}
+.plans__description{
+    font-size: 11px;
+    margin: 0 5px 
 }

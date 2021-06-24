@@ -87,7 +87,6 @@
 }
 
 .datos__modal {
-    // display: none;
     position: fixed;
     z-index: 1;
     overflow: auto;
@@ -107,4 +106,17 @@
 @keyframes datos__modal {
     from{top:330px; opacity:0}
     to{top:0; opacity: 1;}
+}
+
+.datos__description{
+    font-size: 11px; 
+    margin: 0 5px
+}
+.datos__price {
+    display: flex;
+    font-size: 50px;
+    margin: 10px
+}
+.datos__plan{
+    font-size: 12px; color: #252525c5
 }
