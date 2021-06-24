@@ -92,7 +92,7 @@ export const FormDatos = ({ history }) => {
                     Número de tarjeta
                 </label>
                 <input
-                    type="text"
+                    type="number"
                     placeholder=".... .... .... ...."
                     autoComplete="off"
                     name="card"
@@ -111,7 +111,7 @@ export const FormDatos = ({ history }) => {
                             F. Expira
                 </label>
                         <input
-                            type="text"
+                            type="number"
                             placeholder="MM/AA"
                             autoComplete="off"
                             name="fexpira"
@@ -130,7 +130,7 @@ export const FormDatos = ({ history }) => {
                             CVC
                 </label>
                         <input
-                            type="text"
+                            type="number"
                             autoComplete="off"
                             name="cvc"
                             className="datos__input"

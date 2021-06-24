@@ -11,6 +11,7 @@ export const Datos = ({ history }) => {
     const { suscriptionState } = useContext(SuscriptionContext);
 
     const { ok } = suscriptionState
+    const { popular } = suscriptionState.sucriptionActive;
 
     if(!ok) {
         return <Redirect to="/suscripcion" />
@@ -41,7 +42,7 @@ export const Datos = ({ history }) => {
                             hidden={!dimensiones}
                             onClick={handleModal}
                         >
-                            {"Plan Estándar >"}
+                            {(popular) ? "Plan Estándar >" : "Plan Premiun >"}
                         </div>
                     </div>
                 </div>
