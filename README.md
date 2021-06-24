@@ -1,3 +1,30 @@
+# Descripción del funcioamiento
+Se utilizo Context por el mismo hecho que el app pequeño, seria innecesario utilizar otro paquete como el Redux para la comunicación de ventanas
+
+## paquetes de terceros
+### enzyme
+Para facilitar las pruebas unitarias en React
+
+### react-hooks
+Para realizar pruebas en los hooks
+
+### react-router-dom
+Para renderizar los componentes, lo utilizo porque es muy facil y legible
+
+### SCSS
+Por la facilidad del orden a estilizar
+
+## HOOKS
+### useForm
+Cree mi propio hooks de formulario para reutilizar en destintos componentes
+
+## Diseño
+### imagenes
+Se utilizó imagenes para una mejor vista hacia el usuario
+
+### colores
+Por defecto se utilizo el color que se mostraba en el mackup
+
 # Desafío Frontend
 Bienvenido(a) al desafío Frontend para ser parte de EC, esperamos que lo realices para poder tenerte pronto en nuestras oficinas. 🔥🎉
 
