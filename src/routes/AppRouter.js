@@ -34,8 +34,9 @@ export const AppRouter = () => {
                     />
 
                     <Route
+                        exact
                         path="/confirmacion"
-                        render={Confirmacion}
+                        component={Confirmacion}
                     />
 
                     <Redirect to="/" />

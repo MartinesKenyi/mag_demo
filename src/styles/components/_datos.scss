@@ -65,3 +65,46 @@
     color:#252525c5;
     cursor: pointer;
 }
+.datos__select-plans{
+    padding: 30px 75px;
+
+    @media screen and (max-width: 1600px) {
+        padding: 30px 50px;
+    }
+
+    @media screen and (max-width: 750px) {
+        padding: 30px;
+    }
+
+    @media screen and (max-width: 650px) {
+        padding: 30px 10px;
+    }
+}
+
+.datos__cambiar{
+    text-align: center;
+    font-weight: bold;
+}
+
+.datos__modal {
+    // display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e3f5f86;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: datos__modal;
+    animation-duration: 1s;
+}
+@keyframes datos__modal {
+    from{top:330px; opacity:0}
+    to{top:0; opacity: 1;}
+}

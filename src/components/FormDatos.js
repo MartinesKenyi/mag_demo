@@ -1,9 +1,64 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { SuscriptionContext } from '../suscription/SuscriptionContext';
+import { UsuarioContext } from '../usuario/UsuarioContext';
+import { useForm } from '../hooks/useForm';
+import { types } from '../types/types';
 
 export const FormDatos = ({ history }) => {
 
+    const { suscriptionState } = useContext(SuscriptionContext);
+    const { dispatch } = useContext(UsuarioContext);
+    const { precio } = suscriptionState.sucriptionActive;
+
+    const [error, setError] = useState('')
+
+    const [valueForm, handleInputChange] = useForm({
+        usuario: '',
+        card: '',
+        fexpira: '',
+        cvc: ''
+    });
+
+    const { usuario, card, fexpira, cvc } = valueForm;
+
     const handlePagar = () => {
-        history.push("/confirmacion");
+
+        if (validForm()) {
+            dispatch({
+                type: types.setUsuario,
+                payload: {
+                    usuario, 
+                    card, 
+                    fexpira, 
+                    cvc
+                }
+            });
+            history.push("/confirmacion");
+        }
+    }
+    const validForm = () => {
+        if(usuario.length < 5) {
+            console.log("Digite su nombre y apellidos!")
+            setError("Digite su nombre y apellidos!")
+            return false;
+        }
+        if(card.length < 12) {
+            console.log("Digite la tarjeta correctamente!")
+            setError("Digite la tarjeta correctamente!")
+            return false;
+        }
+        if(fexpira.length < 5) {
+            console.log("Digite la fecha de F. expiración correctamente!")
+            setError("Digite la fecha de F. expiración correctamente!")
+            return false;
+        }
+        if(cvc.length < 3) {
+            console.log("Digite CVC correctamente!")
+            setError("Digite CVC correctamente!")
+            return false;
+        }
+
+        return true;
     }
 
     return (
@@ -22,10 +77,10 @@ export const FormDatos = ({ history }) => {
                     type="text"
                     placeholder="Nombre y apellido"
                     autoComplete="off"
-                    name="title"
+                    name="usuario"
                     className="datos__input"
-                // value={title}
-                // onChange={handleInputChange}
+                    value={usuario}
+                    onChange={handleInputChange}
                 />
 
             </fieldset>
@@ -40,10 +95,10 @@ export const FormDatos = ({ history }) => {
                     type="text"
                     placeholder=".... .... .... ...."
                     autoComplete="off"
-                    name="title"
+                    name="card"
                     className="datos__input"
-                // value={title}
-                // onChange={handleInputChange}
+                    value={card}
+                    onChange={handleInputChange}
                 />
             </fieldset>
 
@@ -59,11 +114,11 @@ export const FormDatos = ({ history }) => {
                             type="text"
                             placeholder="MM/AA"
                             autoComplete="off"
-                            name="title"
+                            name="fexpira"
                             className="datos__input"
                             style={{ width: '60%' }}
-                        // value={title}
-                        // onChange={handleInputChange}
+                            value={fexpira}
+                            onChange={handleInputChange}
                         />
                     </fieldset>
                 </div>
@@ -77,14 +132,19 @@ export const FormDatos = ({ history }) => {
                         <input
                             type="text"
                             autoComplete="off"
-                            name="title"
+                            name="cvc"
                             className="datos__input"
                             style={{ width: '60%' }}
-                        // value={title}
-                        // onChange={handleInputChange}
+                            value={cvc}
+                            onChange={handleInputChange}
                         />
                     </fieldset>
                 </div>
+            </div>
+            <div style={{
+                color: '#FD3D4C'
+            }}>
+                { error }
             </div>
 
             <div
@@ -94,7 +154,7 @@ export const FormDatos = ({ history }) => {
                     className="button"
                     onClick={handlePagar}
                 >
-                    Pagar S/.29.00
+                    Pagar S/. {precio}.00
                 </button>
             </div>
         </>

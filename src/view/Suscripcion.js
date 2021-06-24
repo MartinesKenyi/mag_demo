@@ -1,7 +1,8 @@
-import React from 'react'
-import { Plans } from '../components/Plans'
+import React from 'react';
+import { Plans } from '../components/Plans';
+import { suscriptions } from '../data/sucription';
 
-export const Suscripcion = ({history}) => {
+export const Suscripcion = ({ history }) => {
     return (
         <div className="background__body">
 
@@ -12,9 +13,16 @@ export const Suscripcion = ({history}) => {
                 </div>
 
                 <div className="suscription__plans">
-                    <Plans
-                        history={history}
-                    />
+                {
+                    suscriptions.map((suscription, i) => (
+                        <Plans
+                            key={i}
+                            history={history}
+                            {...suscription}
+                        />
+                    ))
+                
+                }
                 </div>
             </div>
         </div>

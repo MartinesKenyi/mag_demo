@@ -33,7 +33,15 @@
     margin: 0 20%;
     padding-top: calc(100% - 95%);
 
+    
+
     @media screen and (max-width: 750px) {
         margin: 0;
     }
+    @media screen and (max-width: 650px) {
+        overflow-x: auto;
+    }
 }
+// .suscription__plans::-webkit-scrollbar {
+//     width: 0;
+// }
