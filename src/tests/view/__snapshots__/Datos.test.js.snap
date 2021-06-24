@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Datos /> Debe de mostrarse correctamente 1`] = `
+<Datos
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+/>
+`;

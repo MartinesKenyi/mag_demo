@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Suscription /> Debe de mostrarse correctamente 1`] = `
+<div
+  className="background__body"
+>
+  <div
+    className="filter"
+  >
+    <div
+      className="suscription__container_title"
+    >
+      <h1>
+        Mag 
+        <span>
+          plans
+        </span>
+         
+      </h1>
+      <p>
+        Elija un plan que funcione mejor para usted.
+      </p>
+    </div>
+    <div
+      className="suscription__plans"
+    >
+      <Plans
+        beneficios={
+          Array [
+            "Sed ut perspiciatis unde omnis iste natus. ",
+            "But I must explain to you how all this mistaken. ",
+            "Sed ut perspiciatis unde omnis iste natus error.",
+          ]
+        }
+        descricion="Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+        key="0"
+        popular={true}
+        precio="29"
+        tipo="Estándar"
+      />
+      <Plans
+        beneficios={
+          Array [
+            "Sed ut perspiciatis unde omnis iste natus. ",
+            "But I must explain to you how all this mistaken. ",
+            "Sed ut perspiciatis unde omnis iste natus error.",
+            "But I must explain to you how all this mistaken. ",
+            "Sed ut perspiciatis unde omnis iste natus error.",
+          ]
+        }
+        descricion="Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+        key="1"
+        popular={false}
+        precio="59"
+        tipo="Premiun"
+      />
+    </div>
+  </div>
+</div>
+`;

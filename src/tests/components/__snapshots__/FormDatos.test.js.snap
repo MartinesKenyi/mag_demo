@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FormDatos /> Debe de mostrarse correctamente  1`] = `
+Array [
+  <h2
+    className="datos__title-h2"
+  >
+    Registre sus datos
+  </h2>,
+  <fieldset
+    className="datos__fieldset"
+  >
+    <label
+      className="datos__label"
+    >
+      Nombre y apellidos
+    </label>
+    <input
+      autoComplete="off"
+      className="datos__input"
+      name="usuario"
+      onChange={[Function]}
+      placeholder="Nombre y apellido"
+      type="text"
+      value=""
+    />
+  </fieldset>,
+  <fieldset
+    className="datos__fieldset"
+  >
+    <label
+      className="datos__label"
+    >
+      Número de tarjeta
+    </label>
+    <input
+      autoComplete="off"
+      className="datos__input"
+      name="card"
+      onChange={[Function]}
+      placeholder=".... .... .... ...."
+      type="number"
+      value=""
+    />
+  </fieldset>,
+  <div
+    className="row"
+  >
+    <div
+      style={
+        Object {
+          "float": "left",
+          "width": "50%",
+        }
+      }
+    >
+      <fieldset
+        className="datos__fieldset"
+      >
+        <label
+          className="datos__label"
+        >
+          F. Expira
+        </label>
+        <input
+          autoComplete="off"
+          className="datos__input"
+          name="fexpira"
+          onChange={[Function]}
+          placeholder="MM/AA"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+          type="number"
+          value=""
+        />
+      </fieldset>
+    </div>
+    <div
+      style={
+        Object {
+          "float": "left",
+          "width": "50%",
+        }
+      }
+    >
+      <fieldset
+        className="datos__fieldset"
+      >
+        <label
+          className="datos__label"
+        >
+          CVC
+        </label>
+        <input
+          autoComplete="off"
+          className="datos__input"
+          name="cvc"
+          onChange={[Function]}
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+          type="number"
+          value=""
+        />
+      </fieldset>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "color": "#FD3D4C",
+      }
+    }
+  />,
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Pagar S/. 
+      .00
+    </button>
+  </div>,
+]
+`;

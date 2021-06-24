@@ -7,9 +7,6 @@ export const Confirmacion = () => {
     const dimensiones = window.matchMedia("(max-width: 580px)").matches;
     const { usuarioState } = useContext(UsuarioContext);
     const { suscriptionState } = useContext(SuscriptionContext);
-    
-    console.log(usuarioState)
-    console.log(suscriptionState)
 
     const { precio, tipo } = suscriptionState.sucriptionActive;
     const { usuario } = usuarioState.usuarioActive;

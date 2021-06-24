@@ -12,7 +12,7 @@ export const SelectPlans = ({dimensiones, handleClose}) => {
 
     const handleCambiarPlan = () => {
         const suscription = suscriptions.find(s => s.popular !== popular)
-        console.log(suscription)
+        
         dispatch({
             type: types.setSuscription,
             payload: { ...suscription }

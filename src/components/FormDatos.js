@@ -38,22 +38,18 @@ export const FormDatos = ({ history }) => {
     }
     const validForm = () => {
         if(usuario.length < 5) {
-            console.log("Digite su nombre y apellidos!")
             setError("Digite su nombre y apellidos!")
             return false;
         }
         if(card.length < 12) {
-            console.log("Digite la tarjeta correctamente!")
             setError("Digite la tarjeta correctamente!")
             return false;
         }
         if(fexpira.length < 5) {
-            console.log("Digite la fecha de F. expiración correctamente!")
             setError("Digite la fecha de F. expiración correctamente!")
             return false;
         }
         if(cvc.length < 3) {
-            console.log("Digite CVC correctamente!")
             setError("Digite CVC correctamente!")
             return false;
         }
@@ -92,7 +88,7 @@ export const FormDatos = ({ history }) => {
                     Número de tarjeta
                 </label>
                 <input
-                    type="number"
+                    type="text"
                     placeholder=".... .... .... ...."
                     autoComplete="off"
                     name="card"
@@ -111,7 +107,7 @@ export const FormDatos = ({ history }) => {
                             F. Expira
                 </label>
                         <input
-                            type="number"
+                            type="text"
                             placeholder="MM/AA"
                             autoComplete="off"
                             name="fexpira"

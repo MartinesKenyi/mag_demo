@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AppRouter /> Debe de mostrarse correctamente 1`] = `
+<BrowserRouter>
+  <div>
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/suscripcion"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/datos"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/confirmacion"
+      />
+      <Redirect
+        to="/"
+      />
+    </Switch>
+  </div>
+</BrowserRouter>
+`;

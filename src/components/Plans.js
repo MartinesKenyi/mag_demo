@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { SuscriptionContext } from '../suscription/SuscriptionContext';
 import { types } from '../types/types';
 import { ListBeneficios } from './ListBeneficios';
@@ -68,4 +69,12 @@ export const Plans = ({ history, tipo, precio, descricion, popular, beneficios }
             </div>
         </>
     )
+}
+
+Plans.propTypes = {
+    tipo: PropTypes.string.isRequired, 
+    precio: PropTypes.string.isRequired,
+    descricion: PropTypes.string, 
+    popular: PropTypes.bool,
+    beneficios: PropTypes.array,
 }

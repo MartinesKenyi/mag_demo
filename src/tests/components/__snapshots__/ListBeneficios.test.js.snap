@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ListBeneficios /> Debe de mostrarse correctamente 1`] = `
+<Fragment>
+  <li
+    className="li plans__li"
+  >
+    Hola
+  </li>
+</Fragment>
+`;

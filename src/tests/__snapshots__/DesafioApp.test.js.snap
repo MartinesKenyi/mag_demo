@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <DesafioApp /> Debe de mostrarse correctamente 1`] = `
+<UsuarioProvider>
+  <SuscriptionProvider>
+    <AppRouter />
+  </SuscriptionProvider>
+</UsuarioProvider>
+`;

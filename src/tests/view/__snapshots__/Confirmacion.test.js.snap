@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Confirmacion /> Debe de mostrarse correctamente  1`] = `
+<div
+  className="background__body"
+>
+  <div
+    className="filter"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      className="confirmacion__container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          style={
+            Object {
+              "float": "left",
+              "width": "65%",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "padding": "30px",
+              }
+            }
+          >
+            <div
+              className="success-checkmark"
+            >
+              <div
+                className="check-icon"
+              >
+                <span
+                  className="icon-line line-tip"
+                />
+                <span
+                  className="icon-line line-long"
+                />
+                <div
+                  className="icon-fix"
+                />
+              </div>
+            </div>
+            <div
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              <p
+                className="confirmacion__bienvenido"
+              >
+                 Bienvenido,
+                <span>
+                   
+                  MARTINEZ
+                   
+                </span>
+                has adquirido el
+              </p>
+              <h2
+                className="confirmacion__plan"
+              >
+                Plan 
+              </h2>
+              <span
+                className="confirmacion__precio"
+              >
+                S/ 
+                 al mes
+              </span>
+              <p
+                className="confirmacion__descripcion"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div
+                className="confirmacion__ref"
+              >
+                Ir a ver mi plan
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          hidden={false}
+          style={
+            Object {
+              "float": "left",
+              "width": "35%",
+            }
+          }
+        >
+          <div>
+            <img
+              alt="img"
+              className="confirmacion__img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SelectPlans /> Debe de mostrarse correctamente 1`] = `
+<div
+  className="datos__select-plans"
+  style={Object {}}
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="plans__popular"
+      hidden={true}
+      onClick={[MockFunction]}
+    >
+       X 
+    </div>
+  </div>
+  <h3
+    style={
+      Object {
+        "color": "#252525c5",
+        "fontSize": "12px",
+      }
+    }
+  >
+    plan
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": "20px",
+        }
+      }
+    >
+       
+      Premiun
+       
+    </span>
+  </h3>
+  <h1
+    style={
+      Object {
+        "display": "flex",
+        "fontSize": "50px",
+        "margin": "10px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "12px",
+          "margin": "10px",
+        }
+      }
+    >
+      S/
+    </span>
+    59
+    <span
+      style={
+        Object {
+          "fontSize": "10px",
+          "margin": "35px 0 0 5px",
+        }
+      }
+    >
+       / al mes
+    </span>
+  </h1>
+  <p
+    style={
+      Object {
+        "fontSize": "11px",
+        "margin": "0 5px",
+      }
+    }
+  >
+     
+    Lorem
+     
+  </p>
+  <hr
+    style={
+      Object {
+        "border": "1pt solid #6b6b6b62",
+        "margin": "15px 0",
+      }
+    }
+  />
+  <ul
+    className="ul"
+  />
+  <div
+    style={
+      Object {
+        "fontSize": "13px",
+        "marginTop": "15%",
+        "textAlign": "center",
+      }
+    }
+  >
+    <div
+      className="datos__cambiar-plan"
+      onClick={[Function]}
+    >
+      Cambiar a plan 
+       premiun &gt;
+    </div>
+  </div>
+</div>
+`;

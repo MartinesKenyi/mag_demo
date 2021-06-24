@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Plans /> Debe de mostrarse correctamente 1`] = `
+<div
+  className="plans__container"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="plans__popular"
+      hidden={true}
+    >
+       POPULAR 
+    </div>
+  </div>
+  <h3
+    className="plans__plan"
+  />
+  <h1
+    style={
+      Object {
+        "display": "flex",
+        "fontSize": "50px",
+        "margin": "10px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "12px",
+          "margin": "10px",
+        }
+      }
+    >
+      S/
+    </span>
+    <span
+      style={
+        Object {
+          "fontSize": "10px",
+          "margin": "35px 0 0 5px",
+        }
+      }
+    >
+       / al mes
+    </span>
+  </h1>
+  <p
+    style={
+      Object {
+        "fontSize": "11px",
+        "margin": "0 5px",
+      }
+    }
+  >
+     
+     
+  </p>
+  <hr
+    style={
+      Object {
+        "border": "1pt solid #6b6b6b62",
+        "margin": "15px 0",
+      }
+    }
+  />
+  <ul
+    className="ul"
+    style={
+      Object {
+        "marginBottom": "60px",
+      }
+    }
+  />
+  <div
+    className="plans__div_button"
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Suscribirme
+    </button>
+  </div>
+</div>
+`;
